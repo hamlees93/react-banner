@@ -4,9 +4,7 @@ import styles from "./CardImage.module.scss";
 
 const CardImage: React.FC<ImageProps> = ({ alt="Card Image", ...props }) => {
   return (
-    <div className={styles.content}>
-      <Image className={styles.image} alt={alt} {...props} />
-    </div>
+    <Image className={styles.image} alt={alt} width={300} height={100} {...props} />
   );
 };
 

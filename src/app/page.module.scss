@@ -1,16 +1,18 @@
 .main {
   display: flex;
   flex-direction: column;
-  min-height: 100svh;
+  min-height: 100vh;
 
   .hero {
+    flex: 1;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    text-align: center;
     color: white;
+    padding: 24px;
 
-    flex: 1;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/hero.jpg');
     background-size: auto;
     background-position: center;
@@ -22,11 +24,15 @@
     .heroBody {
       padding: 24px 0px;
       max-width: 50%;
-      text-align: center;
     }
   }
 
   .cards {
     flex: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
   }
 }

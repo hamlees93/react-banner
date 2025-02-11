@@ -8,7 +8,9 @@ interface Props {
 const CardBody: React.FC<Props> = ({ bodyText }) => {
   return (
     <div className={styles.content}>
-      <p className={styles.text}>{bodyText}</p>
+      {bodyText.split("\n").map((paragraph, index) => (
+        <p key={`paragraph-${index}`} className={styles.text}>{paragraph}</p>
+      ))}
     </div>
   );
 };
