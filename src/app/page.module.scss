@@ -11,7 +11,7 @@
     align-items: center;
     text-align: center;
     color: white;
-    padding: 24px;
+    padding: 48px 24px;
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/hero.jpg');
     background-size: auto;
@@ -34,5 +34,23 @@
     justify-content: center;
     gap: 32px;
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 850px) {
+  .main {
+    .hero {
+      .heroBody {
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    .cards {
+      padding: 16px;
+    }
   }
 }
